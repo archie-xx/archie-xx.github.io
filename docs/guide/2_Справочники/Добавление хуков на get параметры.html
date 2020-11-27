@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Добавление хуков на get параметры | MintAdmin</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.52d7876d.css" as="style"><link rel="preload" href="/assets/js/app.64bca8d7.js" as="script"><link rel="preload" href="/assets/js/2.aef71c39.js" as="script"><link rel="preload" href="/assets/js/13.61461f75.js" as="script"><link rel="prefetch" href="/assets/js/10.52f13318.js"><link rel="prefetch" href="/assets/js/11.a9d37d5f.js"><link rel="prefetch" href="/assets/js/12.9b7319b5.js"><link rel="prefetch" href="/assets/js/14.ab39971c.js"><link rel="prefetch" href="/assets/js/15.2e410170.js"><link rel="prefetch" href="/assets/js/16.2f72cef1.js"><link rel="prefetch" href="/assets/js/17.082891d8.js"><link rel="prefetch" href="/assets/js/18.5ef91e85.js"><link rel="prefetch" href="/assets/js/19.5f7b43ab.js"><link rel="prefetch" href="/assets/js/20.e04f49fa.js"><link rel="prefetch" href="/assets/js/21.48f41ce2.js"><link rel="prefetch" href="/assets/js/22.1b4dfbdf.js"><link rel="prefetch" href="/assets/js/23.0528737a.js"><link rel="prefetch" href="/assets/js/24.a2583cbd.js"><link rel="prefetch" href="/assets/js/25.34908c55.js"><link rel="prefetch" href="/assets/js/26.1eafda08.js"><link rel="prefetch" href="/assets/js/27.6e99902a.js"><link rel="prefetch" href="/assets/js/28.ec798405.js"><link rel="prefetch" href="/assets/js/29.7a3b59ea.js"><link rel="prefetch" href="/assets/js/3.7810185e.js"><link rel="prefetch" href="/assets/js/30.ca849d0d.js"><link rel="prefetch" href="/assets/js/31.06c8ae72.js"><link rel="prefetch" href="/assets/js/32.5e8902d5.js"><link rel="prefetch" href="/assets/js/33.408ae6b9.js"><link rel="prefetch" href="/assets/js/34.69de4585.js"><link rel="prefetch" href="/assets/js/35.c9613946.js"><link rel="prefetch" href="/assets/js/36.cfb2c660.js"><link rel="prefetch" href="/assets/js/4.049d7b7c.js"><link rel="prefetch" href="/assets/js/5.7fdac150.js"><link rel="prefetch" href="/assets/js/6.73c063ed.js"><link rel="prefetch" href="/assets/js/7.294a7cdc.js"><link rel="prefetch" href="/assets/js/8.e7807931.js"><link rel="prefetch" href="/assets/js/9.3112df6c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.52d7876d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://steamuserimages-a.akamaihd.net/ugc/960853363633424461/4C0E46016EE7ABF8440FCA7B9B5AB60EF55AA969/" alt="MintAdmin" class="logo"> <span class="site-name can-hide">MintAdmin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Документация
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Документация
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Начало работы</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/1_Начало работы/Установка.html" class="sidebar-link">Установка</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Справочники</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/2_Справочники/Cоздание справочника.html" class="sidebar-link">Создание нового справочника</a></li><li><a href="/guide/2_Справочники/Добавление бейджа.html" class="sidebar-link">Добавление бейджа</a></li><li><a href="/guide/2_Справочники/Добавление хуков на get параметры.html" class="active sidebar-link">Добавление хуков на get параметры</a></li><li><a href="/guide/2_Справочники/Представление редактирования.html" class="sidebar-link">Представление редактирования</a></li><li><a href="/guide/2_Справочники/Табличное представление.html" class="sidebar-link">Табличное представление</a></li><li><a href="/guide/2_Справочники/Типы полей формы.html" class="sidebar-link">Типы полей формы</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Frontend</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/3_Frontend/Form.vue.html" class="sidebar-link">Form.vue</a></li><li><a href="/guide/3_Frontend/Кастомизация страницы представления редактирования.html" class="sidebar-link">Кастомизация страницы представления редактирования</a></li><li><a href="/guide/3_Frontend/Кастомизация страницы табличного представления.html" class="sidebar-link">Кастомизация страницы табличного представления</a></li><li><a href="/guide/3_Frontend/Настройка dashboard.html" class="sidebar-link">Настройка страницы dashboard</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Backend</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/4_Backend/CRUDController.html" class="sidebar-link">CRUDController</a></li><li><a href="/guide/4_Backend/Индексация моделей.html" class="sidebar-link">Индексация моделей</a></li><li><a href="/guide/4_Backend/Исключения.html" class="sidebar-link">Исключения (ошибки)</a></li><li><a href="/guide/4_Backend/Продолжительное тестирование в Jenkins.html" class="sidebar-link">Продолжительное тестирование в Jenkins</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Push-уведомления</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/5_Push-уведомления/Методы API .html" class="sidebar-link">Методы API</a></li><li><a href="/guide/5_Push-уведомления/Отправка пуша по топику или токену.html" class="sidebar-link">Отправка пуша по топику или токену</a></li><li><a href="/guide/5_Push-уведомления/Подписка отписка на топик по токену.html" class="sidebar-link">Подписка/отписка на топик по firebase токену</a></li><li><a href="/guide/5_Push-уведомления/Порядок работы.html" class="sidebar-link">Порядок работы</a></li><li><a href="/guide/5_Push-уведомления/Создание конфига для ios android.html" class="sidebar-link">Cоздание конфига для IOS &amp;&amp; Android</a></li><li><a href="/guide/5_Push-уведомления/Установка Push-notifications.html" class="sidebar-link">Установка Push-notifications</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Работа с ElasticSearch</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/6_Работа с ElasticSearch/Индексация.html" class="sidebar-link">Индексация</a></li><li><a href="/guide/6_Работа с ElasticSearch/Сортировка.html" class="sidebar-link">Сортировка</a></li><li><a href="/guide/6_Работа с ElasticSearch/Фильтрация.html" class="sidebar-link">Фильтрация</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Работа с tntsearch</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/7_Работа с tntsearch/Индексация.html" class="sidebar-link">Индексация</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="добавление-хуков-на-get-параметры"><a href="#добавление-хуков-на-get-параметры" class="header-anchor">#</a> Добавление хуков на get параметры</h1> <p>Добавление новых полей в Form:</p> <ul><li><p>let slots = переменная для хранения полей, которые будут отбражаться</p></li> <li><p>model.defaultSlot объект, который содержит значения для полей по умолчанию.</p></li> <li><p>model.routeGetParams - массив объектов хуков</p></li> <li><p>model.routeGetParams.index - для хуков на index странице</p></li> <li><p>model.routeGetParams.form - для хуков на form странице</p></li> <li><p>model.routeGetParams.index.*.source - названия ключа в get параметрах</p></li> <li><p>model.routeGetParams.index.*.target - <em>(string, array, undefined)</em> - значения поля key объекта из массива fields</p></li> <li><p>model.routeGetParams.index.*.onUpdate - <em>async (value, field, model) =&gt; {}</em>
+асинхронная колбэк функция. принимает значение гет параметра - value, и поле field - объект инпута формы( или массив ) и объект model</p></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//resources/js/models/Example.js</span>
+ <span class="token keyword">let</span> slots <span class="token operator">=</span> <span class="token punctuation">{</span>
+   index<span class="token operator">:</span> <span class="token punctuation">{</span>
+     topHeader<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">текс по умолчанию</span><span class="token template-punctuation string">`</span></span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   form<span class="token operator">:</span> <span class="token punctuation">{</span>
+     topHeader<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">текс по умолчанию</span><span class="token template-punctuation string">`</span></span>
+   <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">let</span> model <span class="token operator">=</span> <span class="token punctuation">{</span>
+  slots<span class="token operator">:</span> slots<span class="token punctuation">,</span>
+  defaultSlots<span class="token operator">:</span> <span class="token punctuation">{</span>
+    index<span class="token operator">:</span> <span class="token punctuation">{</span>
+      topHeader<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">текс по умолчанию</span><span class="token template-punctuation string">`</span></span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    form<span class="token operator">:</span> <span class="token punctuation">{</span>
+      topHeader<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">текс по умолчанию</span><span class="token template-punctuation string">`</span></span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  routeGetParams<span class="token operator">:</span> <span class="token punctuation">{</span>
+      index<span class="token operator">:</span><span class="token punctuation">[</span>
+
+    <span class="token punctuation">{</span>
+      source<span class="token operator">:</span> <span class="token string">&quot;get_param_name&quot;</span><span class="token punctuation">,</span><span class="token comment">//key в get параметрах</span>
+      target<span class="token operator">:</span> <span class="token string">&quot;field_key&quot;</span><span class="token punctuation">,</span> <span class="token comment">// значение поля key у поля формы</span>
+      <span class="token function-variable function">onUpdate</span><span class="token operator">:</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">value<span class="token punctuation">,</span> field<span class="token punctuation">,</span> model</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          
+        <span class="token keyword">let</span> q <span class="token operator">=</span>  <span class="token constant">ORM</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// доп запрос </span>
+        field<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token punctuation">{</span>
+          label<span class="token operator">:</span> q<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+          value<span class="token operator">:</span> value
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>        
+         
+        slots<span class="token punctuation">.</span>form<span class="token punctuation">.</span>topHeader <span class="token operator">=</span><span class="token string">'custom text for slot '</span><span class="token operator">+</span> q<span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+ <span class="token punctuation">]</span>
+
+  
+<span class="token punctuation">}</span>
+<span class="token comment">/// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>Для взаимодействия пагинации и гет параметра
+надо добавить название гет параметра в массив,
+который прокидывается в ORM.paginate 7ым параметром.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">async</span> <span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">await</span> <span class="token constant">ORM</span><span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span>model_name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token keyword">async</span> <span class="token function">paginate</span><span class="token punctuation">(</span><span class="token parameter">page<span class="token punctuation">,</span> perPage<span class="token punctuation">,</span> query<span class="token punctuation">,</span> sortBy<span class="token punctuation">,</span> sortDirection<span class="token punctuation">,</span> params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">await</span> <span class="token constant">ORM</span><span class="token punctuation">.</span><span class="token function">paginate</span><span class="token punctuation">(</span>
+                model_name<span class="token punctuation">,</span>
+                page<span class="token punctuation">,</span>
+                perPage<span class="token punctuation">,</span>
+                query<span class="token punctuation">,</span>
+                sortBy<span class="token punctuation">,</span>
+                sortDirection<span class="token punctuation">,</span>
+                <span class="token punctuation">[</span> <span class="token string">'role_id'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// массив гет параметров, которые будут прокидоваться в метод пагинации</span>
+                params
+            <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token comment">//...</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/2_Справочники/Добавление бейджа.html" class="prev">
+        Добавление бейджа
+      </a></span> <span class="next"><a href="/guide/2_Справочники/Представление редактирования.html">
+        Представление редактирования
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.64bca8d7.js" defer></script><script src="/assets/js/2.aef71c39.js" defer></script><script src="/assets/js/13.61461f75.js" defer></script>
+  </body>
+</html>
